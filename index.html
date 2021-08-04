@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link  rel="stylesheet" type="text/css"  href="css/styles.css">
+        <script src="js/roundsplanner.js"></script>
+
+    </head>
+    <body onload="openSidebar()">
+        <div class="parent-page">
+            <div class="parent-sidebar">
+                <div class="flex space-between sidemain">
+                    <div onclick="openSidebar()"  class="mob-view "><i class="fa fa-bars" aria-hidden="true" id="menubar"></i></div>
+                <div class="koyo-img" >
+                    <img src="assets/koyo-white.png" >
+                </div>
+
+                <div  onclick="closeSidebar()"  class="mob-view "><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+            </div>
+                <div class="flex dashboard-details" id="list-items" #list-items>
+                    <div>
+                        <div class="vertical-line"></div>
+                    </div>
+                    <div class="parent-list-item" >
+                        <div class="list-item font-18"><i class="fa fa-circle font-10" aria-hidden="true"></i>  CSV Data</div>
+                        <div class="list-item font-18"> <i class="fa fa-circle font-10 " aria-hidden="true"></i> Rounds</div>
+                        <div class="list-item list-active font-18"><i class="fa fa-circle font-10 " aria-hidden="true"></i>  Panel Allotment</div>
+                        <div class="list-item font-18"><i class="fa fa-circle font-10 " aria-hidden="true"></i>  Export</div>
+                    </div>
+                </div>
+                <div class="presidio-img">
+                    <img src="assets/presidio-white.png">
+                </div>
+            </div>
+            <div class="parent-slots" id="slots">
+                <div class="heading font-32">UPCOMING DRIVES</div>
+                        <div class="button-groups ">
+                            <button class="btn flex mar-top-20 font-16">
+                                <div class="not-active">Face to Face</div>
+                                <div class="not-active">Coding Assessment</div>
+                                <div class="active">HR Round</div>
+                                <div class="not-active">Newly created round</div>
+                            </button>
+                        </div>
+
+
+                    <div class="flex mar-top-20 ">
+                        <div class="flex flex-column step-active">
+                            <div class="font-24 flex "><div>STEP 1 </div><div class="horizontal-line"></div></div>
+                            <div class="font-14">Add interviewers</div>
+                        </div>
+                        <div class="flex flex-column step-non-active">
+                            <div class="font-24">STEP 2</div>
+                            <div class="font-14">Panel Allotment</div>
+                        </div>
+                    </div>
+
+                    <div class="flex mar-top-20 space-between flex-wrap">
+                        <div class="flex align-items-center mob-space-between">
+                            <div class="font-18">Date</div>
+                            <div><input type="date"></div>
+                        </div>
+                        <div class="vertical-dashed"></div>
+                        <div class="flex align-items-center mob-space-between">
+                            <div class="font-18">Number of Panels</div>
+                            <div>
+                                <select class="width-94">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="vertical-dashed"></div>
+                        <div class="flex align-items-center mob-space-between">
+                            <div class="font-18">From</div>
+                            <div><input type="time"></div>
+                        </div>
+                        <div class="vertical-dashed"></div>
+                        <div class="flex align-items-center mob-space-between">
+                            <div class="font-18">To</div>
+                            <div><input type="time"></div>
+                        </div>
+                    </div>
+
+                    <div class="mar-top-20">
+                        <div class="drive-date">Drive dates: 25 May 2021 and 26 May 2021</div>
+                    </div>
+
+                    <div class="flex space-between mar-top-20">
+                        <div class="flex align-items-center">
+                            <div class="font-18">
+                                Interview Duration:
+                            </div>
+                            <div>
+                                <select class="width-94">
+                                    <option>1 Min</option>
+                                    <option>2 Min</option>
+                                    <option>3 Min</option>
+                                    <option>4 Min</option>
+                                    <option>5 Min</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="breakbtn">CREATE BREAK</button>
+                        </div>
+                    </div>
+
+                    <div class="flex  mar-top-20">
+                        <div class="flex flex-wrap">
+                            <div class="flex colone tag">
+                                <div >Tea Break</div>
+                                <div class="tag-right">4.00 pm to 4.15 pm <i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                            </div>
+
+                            <div class="flex colone mar-left-20 tag">
+                                <div >Lunch Break</div>
+                                <div class="tag-right">4.00 pm to 4.15 pm <i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex flex-column mar-top-20">
+                            <div class="mar-top-20 font-18">Add interviewers</div>
+                            <div class="box flex mar-top-20">
+                                <div class="tags flex align-items-center">
+                                    <div>Abdul Kalam</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Marc Zuckerberg</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Elon Musk</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Thomas Alva Edison</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Alan Turing</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>John Frederick Kennedy</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Abraham Lincoln</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Abdul Kalam</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Marc Zuckerberg</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Elon Musk</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Thomas Alva Edison</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Alan Turing</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>John Frederick Kennedy</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Abraham Lincoln</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Abdul Kalam</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Marc Zuckerberg</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Elon Musk</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Thomas Alva Edison</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Alan Turing</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>John Frederick Kennedy</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                                <div class="tags flex align-items-center">
+                                    <div>Abraham Lincoln</div>
+                                    <div><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
+                                </div>
+                            </div>
+                    </div>
+
+            </div>
+        </div>
+    </body>
+</html>

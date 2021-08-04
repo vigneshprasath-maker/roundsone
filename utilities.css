@@ -1,0 +1,28 @@
+.flex {
+    display: flex;
+}
+.colone {
+    color: var(--tab-not-active-color);
+}
+.flex-column {
+    flex-direction: column;
+}
+.space-between {
+    justify-content: space-between;
+}
+.mar-top-20 {
+    margin-top: 2.5rem;
+}
+.mar-left-20 {
+    margin-left: 1.25rem;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.width-94 {
+    width: 5.875rem;
+}
+.align-items-center {
+    align-items: center;
+}

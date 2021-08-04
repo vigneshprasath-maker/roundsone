@@ -1,0 +1,25 @@
+:root {
+    --sidebar-bg-color:#0081BC;
+    --breakbt-bg-color:#0081BC;
+    --tag-bg-color:#A9D1E3;
+    --tab-active-bg-color:#FF9E16;
+    --active-list-bg-color:#2094C9;
+    --tab-bg-color:#E8E8E8;
+    --vertical-line-border-color:#A9D1E3;
+    --active-step-color:#0081BC;
+    --non-active-step-color:#D6D6D6;
+    --horizontal-line-border-color:#D6D6D6;
+    --vertical-line-dashed-border:#D6D6D6;
+    --list-item-color:#A9D1E3;
+    --heading-color:#061A40;
+    --breakbtn-color:#F4F4F4;
+    --tag-border-color:#A9D1E3;
+    --drivedate-color:#C9C9C9;
+    --tag-color:#061A40;
+    --tab-active-color:#FAFAFA;
+    --tab-not-active-color:#515151;
+    --box-border-color:#585858;
+    --tab-box-shadow-color:#0000001A;
+    --tab-break-brn-box-shadow-color:#0000002C;
+    --tags-close-color:#D61010;
+}
