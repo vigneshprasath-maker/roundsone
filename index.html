@@ -1,11 +1,11 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link  rel="stylesheet" type="text/css"  href="css/styles.css">
+        <title>RoundsPlanner</title>
         <script src="js/roundsplanner.js"></script>
-
     </head>
     <body onload="openSidebar()">
         <div class="parent-page">
@@ -13,7 +13,7 @@
                 <div class="flex space-between sidemain">
                     <div onclick="openSidebar()"  class="mob-view "><i class="fa fa-bars" aria-hidden="true" id="menubar"></i></div>
                 <div class="koyo-img" >
-                    <img src="assets/koyo-white.png" >
+                    <img src="assets/koyo-white.png" alt="koyo">
                 </div>
 
                 <div  onclick="closeSidebar()"  class="mob-view "><i class="fa fa-close" aria-hidden="true" id="close" ></i></div>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="presidio-img">
-                    <img src="assets/presidio-white.png">
+                    <img src="assets/presidio-white.png" alt="presidio">
                 </div>
             </div>
             <div class="parent-slots" id="slots">
@@ -58,7 +58,7 @@
 
                     <div class="flex mar-top-20 space-between flex-wrap">
                         <div class="flex align-items-center mob-space-between">
-                            <div class="font-18">Date</div>
+                            <div class="font-18"><label>Date</label></div>
                             <div><input type="date"></div>
                         </div>
                         <div class="vertical-dashed"></div>
@@ -76,12 +76,12 @@
                         </div>
                         <div class="vertical-dashed"></div>
                         <div class="flex align-items-center mob-space-between">
-                            <div class="font-18">From</div>
+                            <div class="font-18"><label>From</label></div>
                             <div><input type="time"></div>
                         </div>
                         <div class="vertical-dashed"></div>
                         <div class="flex align-items-center mob-space-between">
-                            <div class="font-18">To</div>
+                            <div class="font-18"><label>To</label></div>
                             <div><input type="time"></div>
                         </div>
                     </div>
